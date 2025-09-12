@@ -2,3 +2,4 @@ streamlit
 genai
 openai
 groq
+google-generativeai
