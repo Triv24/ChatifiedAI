@@ -11,7 +11,7 @@ from google.genai import types
 def init_session():
     defaults = {
         "chat_history": [],
-        "chat_model": "gemini-2.5-flash",
+        "chat_model": "groq-4",
         "image_history": [],
         "image_model": "gemini-2.5-flash",
         "voice_history": [],
@@ -171,3 +171,4 @@ def apply_theme():
         st._config.set_option("theme.secondaryBackgroundColor", "#f0f2f6")
         st._config.set_option("theme.textColor", "#000000")
     
+
