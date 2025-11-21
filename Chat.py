@@ -35,8 +35,8 @@ st.header("What can I do for you Today ? 😊")
 
 model = st.selectbox(
     "Select a model:",
-    ["gemini-2.5-flash", "gpt-4o", "gpt-5", "groq-4"],
-    index=["gemini-2.5-flash", "gpt-4o", "gpt-5", "groq-4"].index(st.session_state.chat_model),
+    ["groq-4", "gemini-2.5-flash", "gpt-4o", "gpt-5"],
+    index=["groq-4", "gemini-2.5-flash", "gpt-4o", "gpt-5"].index(st.session_state.chat_model),
     key="chat_model"
 )
 
@@ -69,3 +69,4 @@ if prompt := st.chat_input("Ask Here..."):
     add_message("chat_history", "assistant", reply)
 
 show_chat("chat_history")
+
